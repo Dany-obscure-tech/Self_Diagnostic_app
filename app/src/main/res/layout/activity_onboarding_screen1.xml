@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    tools:context=".OnboardingScreen1">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/onboardingscreenillustration1"
+            android:layout_margin="@dimen/onboardingMargins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Get Started!"
+            android:textColor="@color/grayish_black"
+            android:fontFamily="@font/archivo_bold"
+            android:textSize="@dimen/onboardingTitle"
+            android:layout_marginStart="@dimen/onboardingMargins"
+            android:layout_marginEnd="@dimen/onboardingMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="lorem ipsum dolor sit amet."
+            android:textColor="@color/grayish_black"
+            android:fontFamily="@font/archivo_regular"
+            android:textSize="@dimen/onboardingTitle"
+            android:layout_marginStart="@dimen/onboardingMargins"
+            android:layout_marginEnd="@dimen/onboardingMargins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginStart="@dimen/onboardingMargins"
+        android:layout_marginTop="@dimen/onboardingMargins"
+        android:layout_marginEnd="@dimen/onboardingMargins"
+        android:layout_marginBottom="@dimen/onboardingMargins">
+
+        <LinearLayout
+            android:id="@+id/radio_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/onboarding_radio_blue" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/onboarding_radio_gray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/onboarding_radio_gray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/next_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/archivo_regular"
+            android:text="Next"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/onboardingTitle" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

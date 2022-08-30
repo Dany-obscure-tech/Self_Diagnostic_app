@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".DoctorsList">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#000B75BF"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/topbar_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_button"
+            android:fontFamily="@font/archivo_bold"
+            android:text="Doctors List"
+            android:textColor="@color/blue"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/doctors_illustration_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/doctors_illustration" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/docList_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctors_illustration_imageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>

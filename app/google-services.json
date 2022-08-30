@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "223503190598",
+    "project_id": "self-diagnostic-app",
+    "storage_bucket": "self-diagnostic-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223503190598:android:506b8f72f32af65d5c1847",
+        "android_client_info": {
+          "package_name": "com.example.selfdiagnosticapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223503190598-9n3ia3ob4piukt4ftnddnev5qf4gn0tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEKLXSyBSVduoZW6be2ID04th45lhtfsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223503190598-9n3ia3ob4piukt4ftnddnev5qf4gn0tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

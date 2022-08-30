@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="Regular_font">20dp</dimen>
+    <dimen name="onboardingTitle">20dp</dimen>
+
+    <dimen name="onboardingMargins">30dp</dimen>
+
+</resources>

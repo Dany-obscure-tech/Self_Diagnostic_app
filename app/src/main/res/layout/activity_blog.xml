@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Blog">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#000B75BF"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/topbar_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_button"
+            android:fontFamily="@font/archivo_bold"
+            android:text="Blog"
+            android:textColor="@color/blue"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/top_bar"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/blog_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Greetings!"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/grayish_black"
+            android:fontFamily="@font/archivo_bold"
+            android:textSize="@dimen/onboardingTitle"
+            android:layout_marginStart="@dimen/onboardingMargins"
+            android:layout_marginEnd="@dimen/onboardingMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="lorem ipsum dolor sit amet."
+            android:textColor="@color/grayish_black"
+            android:fontFamily="@font/archivo_regular"
+            android:textSize="@dimen/onboardingTitle"
+            android:layout_marginStart="@dimen/onboardingMargins"
+            android:layout_marginEnd="@dimen/onboardingMargins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".DiseaseDetails">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#000B75BF"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/topbar_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_button"
+            android:fontFamily="@font/archivo_bold"
+            android:text="Disease Name"
+            android:textColor="@color/blue"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/top_bar"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/disease_illustration_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="21dp"
+                android:src="@drawable/diagnosis_illustration" />
+
+            <TextView
+                android:id="@+id/symptom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/disease_illustration_imageView"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Symptoms"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/symptom_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/symptom_text"
+                android:fontFamily="@font/archivo_regular"
+                android:text="Symptoms...."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/medicine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/symptom_textView"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Medicine"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/medicineName_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/medicine_text"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Medicine name"
+                android:textColor="@color/blue"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_below="@+id/medicineName_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/med_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/med_imageView">
+
+                    <LinearLayout
+                        android:id="@+id/usage_linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_bold"
+                            android:text="Usage : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/adultUsage_linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/usage_linearLayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_regular"
+                            android:text="Adult Usage : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/adultUsage_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_regular"
+                            android:text="Adult Usage : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/childrenUsage_linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/adultUsage_linearLayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_regular"
+                            android:text="Children Usage : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/childUsage_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_regular"
+                            android:text="Children Usage : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sideEffects_linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/childrenUsage_linearLayout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_bold"
+                            android:text="side Effects : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/sideEffects_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_regular"
+                            android:text="Side Effects : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notes_linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sideEffects_linearLayout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_bold"
+                            android:text="Precautions: "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/precautions_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/archivo_regular"
+                            android:text="Precautions : "
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
