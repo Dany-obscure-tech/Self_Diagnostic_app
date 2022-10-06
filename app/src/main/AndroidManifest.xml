@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfDiagnosticApp">
         <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".FormActivity"
+            android:exported="true" />
+        <activity
             android:name=".DoctorsList"
             android:exported="true"
-            android:theme="@style/Theme.Design.NoActionBar"/>
+            android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".DiseaseDetails"
             android:exported="true"

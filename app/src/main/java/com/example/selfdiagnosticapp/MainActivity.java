@@ -118,7 +118,8 @@ public class MainActivity extends AppCompatActivity {
         medicine_relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MedicineList.class);
+                Intent intent = new Intent(MainActivity.this,FormActivity.class);
+                intent.putExtra("ACTIVITY","MED");
                 startActivity(intent);
             }
         });
@@ -126,7 +127,8 @@ public class MainActivity extends AppCompatActivity {
         disease_relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,DiseaseList.class);
+                Intent intent = new Intent(MainActivity.this,FormActivity.class);
+                intent.putExtra("ACTIVITY","DIS");
                 startActivity(intent);
             }
         });
