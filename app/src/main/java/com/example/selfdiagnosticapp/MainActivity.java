@@ -49,8 +49,9 @@ public class MainActivity extends AppCompatActivity {
         SliderView sliderView = findViewById(R.id.imageSlider);
         List<String> sliderimage = new ArrayList<>();
 
-        sliderimage.add("https://miro.medium.com/max/1400/1*R8xPe4JHCtjxxPaUMA1MAw.png");
-        sliderimage.add("https://miro.medium.com/max/1400/1*R8xPe4JHCtjxxPaUMA1MAw.png");
+        sliderimage.add("https://thumbs.dreamstime.com/z/vector-illustration-template-healthcare-poster-abstract-background-icons-medical-health-strategy-care-medicine-global-148971185.jpg");
+        sliderimage.add("https://templates.designwizard.com/03d9e460-c944-11e7-93a5-719ecf802875.jpg");
+        sliderimage.add("https://templates.designwizard.com/133d61a0-9cf1-11e6-8213-e7f33f029fc3.jpg");
 
         SliderAdapter adapter = new SliderAdapter(this, sliderimage);
 

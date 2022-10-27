@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="Get Started!"
+            android:text="Search for Doctors!"
             android:textColor="@color/grayish_black"
             android:fontFamily="@font/archivo_bold"
             android:textSize="@dimen/onboardingTitle"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="lorem ipsum dolor sit amet."
+            android:text="You can search for a required specialist doctor."
             android:textColor="@color/grayish_black"
             android:fontFamily="@font/archivo_regular"
             android:textSize="@dimen/onboardingTitle"

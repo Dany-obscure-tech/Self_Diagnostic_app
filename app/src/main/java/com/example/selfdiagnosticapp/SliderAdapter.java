@@ -36,7 +36,9 @@ public class SliderAdapter extends
     @Override
     public void onBindViewHolder(SliderAdapterVH viewHolder, final int position) {
 
-        Picasso.get().load(R.drawable.slider_image).into(viewHolder.imageViewBackground);
+//        Picasso.get().load(R.drawable.slider_image).into(viewHolder.imageViewBackground);
+        Picasso.get().load(sliderimage.get(position)).into(viewHolder.imageViewBackground);
+
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

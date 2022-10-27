@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -26,6 +27,8 @@ public class FormActivity extends AppCompatActivity {
     String answer8;
     String answer9;
     String answer10;
+
+    ImageButton back_button;
 
     Button submit_button;
 
@@ -136,51 +139,58 @@ public class FormActivity extends AppCompatActivity {
                 }
             }
         });
+
+        backButton();
     }
 
     private Boolean validate() {
         Boolean valid = true;
         if (!q1yes_radioButton.isChecked()&&!q1no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q2yes_radioButton.isChecked()&&!q2no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q3yes_radioButton.isChecked()&&!q3no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q4yes_radioButton.isChecked()&&!q4no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q5yes_radioButton.isChecked()&&!q5no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q6yes_radioButton.isChecked()&&!q6no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q7yes_radioButton.isChecked()&&!q7no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q8yes_radioButton.isChecked()&&!q8no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q9yes_radioButton.isChecked()&&!q9no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
         if (!q10yes_radioButton.isChecked()&&!q10no_radioButton.isChecked()){
-            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
             valid=false;
         }
 
+        if (!valid){
+            Toast.makeText(FormActivity.this, "Please answer all Questions", Toast.LENGTH_SHORT).show();
+        }
+
         return valid;
+    }
+
+    private void backButton() {
+        back_button = findViewById(R.id.back_button);
+
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

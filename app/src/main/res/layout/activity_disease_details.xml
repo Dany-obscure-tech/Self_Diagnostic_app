@@ -127,8 +127,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/archivo_bold"
                             android:text="Usage : "
-                            android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textColor="@color/blue"
+                            android:textSize="18dp" />
 
 
                     </LinearLayout>
@@ -146,7 +146,7 @@
                             android:fontFamily="@font/archivo_regular"
                             android:text="Adult Usage : "
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
 
                         <TextView
                             android:id="@+id/adultUsage_textView"
@@ -155,7 +155,7 @@
                             android:fontFamily="@font/archivo_regular"
                             android:text="Adult Usage : "
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
 
 
                     </LinearLayout>
@@ -173,7 +173,7 @@
                             android:fontFamily="@font/archivo_regular"
                             android:text="Children Usage : "
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
 
                         <TextView
                             android:id="@+id/childUsage_textView"
@@ -182,7 +182,7 @@
                             android:fontFamily="@font/archivo_regular"
                             android:text="Children Usage : "
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
 
 
                     </LinearLayout>
@@ -199,9 +199,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/archivo_bold"
-                            android:text="side Effects : "
-                            android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:text="Side Effects : "
+                            android:textColor="@color/blue"
+                            android:textSize="18dp" />
 
                         <TextView
                             android:id="@+id/sideEffects_textView"
@@ -210,7 +210,7 @@
                             android:fontFamily="@font/archivo_regular"
                             android:text="Side Effects : "
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
 
                     </LinearLayout>
 
@@ -227,8 +227,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/archivo_bold"
                             android:text="Precautions: "
-                            android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textColor="@color/blue"
+                            android:textSize="18dp" />
 
                         <TextView
                             android:id="@+id/precautions_textView"
@@ -237,7 +237,7 @@
                             android:fontFamily="@font/archivo_regular"
                             android:text="Precautions : "
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="16dp" />
 
                     </LinearLayout>
 
